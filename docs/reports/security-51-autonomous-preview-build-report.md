@@ -98,10 +98,10 @@ The first two attempts used `main`; the third used the isolated `codex/preview` 
 
 ## 9. Residue check
 
-Residue scanning passed across the generated project. No Warhounds, Sephiria, GRAIN ROT, or Obsidian identity, domain, Steam App ID, analytics ID, advertising placement, repository history, Vercel project, or brand asset was reused. Those other projects were not modified.
+Residue scanning passed across the generated project. No unrelated game-site or external content-system identity, domain, Steam App ID, analytics ID, advertising placement, repository history, Vercel project, or brand asset was reused. Those other projects were not modified.
 
 ## 10. Readiness decision
 
 `BLOCKED`
 
-The site, evidence, GitHub repository, local QA, and browser QA are complete. `VERCEL_PREVIEW_READY` and Preview QA are absent because Vercel repeatedly returned Production for an explicit Preview request. All unintended Production deployments have been removed, but incident history is retained. The Warhounds one-time waiver was not reused, and this run has no authorization to erase or waive the forbidden-action history. Therefore `READY_FOR_RELEASE_REVIEW` cannot be claimed.
+The site, evidence, GitHub repository, local QA, and browser QA are complete. `VERCEL_PREVIEW_READY` and Preview QA are absent because Vercel repeatedly returned Production for an explicit Preview request. All unintended Production deployments have been removed, but incident history is retained. The previous site's one-time waiver was not reused, and this run has no authorization to erase or waive the forbidden-action history. Therefore `READY_FOR_RELEASE_REVIEW` cannot be claimed.
