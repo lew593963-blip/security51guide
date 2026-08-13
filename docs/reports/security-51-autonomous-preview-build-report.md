@@ -54,6 +54,13 @@ The independent local site contains the five standalone guides listed above. Eve
 
 Canonical, sitemap, robots, JSON-LD, legal identity, and metadata contain no Vercel Preview URL.
 
+### Generated asset provenance
+
+- Integrated asset: `/Users/chenchen/Documents/ChatGPT/security51guide/public/og.png`
+- Original generated file: `/Users/chenchen/.codex/generated_images/019ffa2d-6121-7241-bb66-3503e811e17b/exec-66d8042c-0109-416e-969b-c5fb5121ed2b.png`
+- Tool: built-in OpenAI image generation (`image_gen`)
+- Final prompt: “Create a cinematic 1200 × 630 social sharing card for Security 51 Guide: a deep underground checkpoint control room with an elevator, inspection desk, documents, and medical-test equipment; dark near-black green palette with lime checkpoint-interface accents; exact text ‘SECURITY 51 GUIDE’ and ‘CHECKPOINTS · ANOMALIES · MEDICAL TESTS’; high contrast, safe text margins, landscape marketing asset, no logos and no other text.”
+
 ## 7. Tests, build, and browser QA
 
 - Factory suite: 294 tests passed before materialization.
