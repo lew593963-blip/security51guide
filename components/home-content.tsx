@@ -39,10 +39,10 @@ export function HomeContent({messages}: HomeContentProps) {
       <section className={`${styles.hero} security-hero`} aria-labelledby="home-title">
         <div className="security-hero__media" aria-hidden="true">
           <Image
-            src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4246860/341b6dfc47fbaa1a01148e5a5ee6132ba7fae059/ss_341b6dfc47fbaa1a01148e5a5ee6132ba7fae059.1920x1080.jpg"
+            src="/og.png"
             alt=""
             fill
-            sizes="100vw"
+            sizes="50vw"
             priority
           />
         </div>

@@ -85,8 +85,11 @@ h3,
 }
 
 .security-hero__media img {
+  right: 0 !important;
+  left: auto !important;
+  width: 50% !important;
   object-fit: cover;
-  object-position: 70% center;
+  object-position: right center;
   filter: saturate(0.65) contrast(1.08) brightness(0.7);
 }
 

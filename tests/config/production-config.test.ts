@@ -9,6 +9,10 @@ describe("Security 51 production target config", () => {
     expect(rootConfig.site.url).toBe("https://security51guide.wiki");
     expect(rootConfig.site.copyright.holder).toBe("Security 51 Guide");
     expect(rootConfig.links.repository).toBe("https://github.com/lew593963-blip/security51guide");
+    expect(rootConfig.brand.mark192).toBe("/icon.svg");
+    expect(rootConfig.brand.mark512).toBe("/icon.svg");
+    expect(rootConfig.brand.favicon).toBe("/icon.svg");
+    expect(rootConfig.brand.appleIcon).toBe("/icon.svg");
   });
 
   it("ships analytics and every advertising integration disabled", () => {

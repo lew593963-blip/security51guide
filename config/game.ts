@@ -61,10 +61,10 @@ export const rootConfig = rootConfigSchema.parse({
     platforms: ["Windows PC", "macOS", "Steam"],
   },
   brand: {
-    mark192: "/icon",
-    mark512: "/icon",
-    favicon: "/icon",
-    appleIcon: "/apple-icon",
+    mark192: "/icon.svg",
+    mark512: "/icon.svg",
+    favicon: "/icon.svg",
+    appleIcon: "/icon.svg",
     defaultOgImage: "/og.png",
     manifestDescription:
       "Independent Security 51 guides for checkpoint procedure, anomalies, testing, quarantine, and the launch walkthrough.",

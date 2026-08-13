@@ -12,5 +12,6 @@ describe("Security 51 home", () => {
     expect(screen.getByRole("link", {name: /Open Checkpoint Guide/i})).toHaveAttribute("href", "/checkpoint-guide");
     expect(screen.getAllByTestId("start-card")).toHaveLength(5);
     expect(screen.getByRole("link", {name: /Read Walkthrough/i})).toHaveAttribute("href", "/walkthrough");
+    expect(document.querySelector("img")?.getAttribute("src")).toContain("url=%2Fog.png");
   });
 });
