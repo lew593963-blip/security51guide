@@ -1,6 +1,6 @@
 # 《Security 51 Autonomous Preview Build Report》
 
-Generated: 2026-08-13 17:12 Asia/Shanghai  
+Generated: 2026-08-13 17:12 Asia/Shanghai
 Terminal state: `BLOCKED`
 
 ## 1. Preview URL
