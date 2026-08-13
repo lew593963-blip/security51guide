@@ -1,0 +1,107 @@
+{
+  "common": {
+    "skip": "Skip to content",
+    "language": "Language",
+    "externalLink": "Opens in a new tab"
+  },
+  "nav": {
+    "home": "Home",
+    "guides": "Guides",
+    "checkpointGuide": "Checkpoint",
+    "anomalies": "Anomalies",
+    "medicalTests": "Medical Tests",
+    "quarantine": "Quarantine",
+    "walkthrough": "Walkthrough",
+    "about": "About",
+    "contact": "Contact",
+    "menu": "Menu",
+    "play": "Play on Steam"
+  },
+  "hero": {
+    "eyebrow": "Independent Fan Guide · Launch Build Evidence",
+    "title": "Trust the Manual. Verify Everything.",
+    "description": "Security 51 guides built around the current checkpoint rules, official systems, and clearly labeled player observations—without invented endings or fake certainty.",
+    "stats": [
+      "Released Aug 12, 2026",
+      "68 Steam Achievements",
+      "Windows & macOS",
+      "Choices · Horror · Simulation"
+    ],
+    "primaryCta": "Open Checkpoint Guide",
+    "secondaryCta": "Play on Steam"
+  },
+  "start": {
+    "eyebrow": "First Verified Batch",
+    "title": "Five Focused Protocol Files",
+    "description": "Each guide answers one distinct player intent. Ending conditions and achievement requirements remain deferred until the full-release evidence is reliable enough to publish.",
+    "read": "Read protocol",
+    "cards": [
+      {
+        "number": "1",
+        "title": "Checkpoint Guide",
+        "description": "Run the document, clearance, clock, face, headcount, and daily-order checks in a repeatable sequence."
+      },
+      {
+        "number": "2",
+        "title": "Anomalies",
+        "description": "Separate document mismatches, visible tells, photo anomalies, scans, and elevator threats without memorizing yesterday's rule."
+      },
+      {
+        "number": "3",
+        "title": "Medical Tests",
+        "description": "Use certificates, fingerprints, blood samples, the microscope, and blood type results at the correct point in the stack."
+      },
+      {
+        "number": "4",
+        "title": "Quarantine",
+        "description": "Know when the current bulletin supports deny, security response, isolation, extermination, or continued observation."
+      },
+      {
+        "number": "5",
+        "title": "Walkthrough",
+        "description": "Follow the launch-build progression from Level 1 through blood analysis and the Day 30 branching timeline unlock."
+      }
+    ]
+  },
+  "about": {
+    "eyebrow": "About the Game",
+    "title": "What is Security 51?",
+    "paragraphs": [
+      "Security 51 is an atmospheric horror checkpoint simulator developed and published by Alawar. You screen staff in an underground Area 51 facility, verify access, watch the elevator, and decide who may enter, who must be stopped, and which threat cannot be allowed back outside.",
+      "The launch build layers documents, clearance, time, headcount, photographs, body and organ scans, fingerprints, blood analysis, quarantine, infection control, field operations, and delayed consequences. Daily instructions can override the default workflow, so these guides teach a verification stack instead of one permanent answer table."
+    ],
+    "stats": [
+      {"label": "Developer", "value": "Alawar"},
+      {"label": "Publisher", "value": "Alawar"},
+      {"label": "Release", "value": "August 12, 2026"},
+      {"label": "Platforms", "value": "Windows · macOS"},
+      {"label": "Mode", "value": "Single-player"}
+    ],
+    "cta": "Open the Walkthrough"
+  },
+  "finalCta": {
+    "eyebrow": "Procedure Before Instinct",
+    "title": "Start the Next Shift Prepared",
+    "description": "Begin with the checkpoint sequence, then open the specialist protocol that matches the tool or decision causing trouble.",
+    "primary": "Read Checkpoint Guide",
+    "secondary": "Play on Steam"
+  },
+  "footer": {
+    "about": "Security 51 Guide is an independent fan-made resource. It is not affiliated with Alawar, Valve, or Steam.",
+    "description": "Evidence-checked guides for Security 51 checkpoint procedure, anomalies, medical tests, quarantine, and launch progression.",
+    "guides": "Protocol Files",
+    "official": "Official Links",
+    "legal": "Site Information",
+    "discord": "Official Community",
+    "steam": "Play Security 51 on Steam",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "copyright": "Independent fan-made resource. Security 51 and related marks belong to their respective owners."
+  },
+  "notFound": {
+    "eyebrow": "Clearance Denied",
+    "title": "Page Not Found",
+    "description": "This protocol file does not exist. Return to the checkpoint and continue with a current evidence-checked guide.",
+    "cta": "Back to Home"
+  }
+}

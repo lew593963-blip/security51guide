@@ -1,0 +1,100 @@
+{
+  "schema_version": "0.1.0",
+  "page_id": "medical-tests",
+  "observed_on": "2026-08-13",
+  "sources": [
+    {
+      "source_id": "official-steam",
+      "evidence_class": "OFFICIAL",
+      "title": "Security 51 on Steam",
+      "url": "https://store.steampowered.com/app/4246860/Security_51/?l=english",
+      "publisher": "Alawar / Valve",
+      "published_at": null,
+      "observed_at": "2026-08-13T17:20:00.000+08:00",
+      "version_boundary": "English Steam listing observed after the August 12, 2026 release"
+    },
+    {
+      "source_id": "official-steam-community",
+      "evidence_class": "OFFICIAL",
+      "title": "Security 51 official Steam Community updates",
+      "url": "https://steamcommunity.com/app/4246860",
+      "publisher": "Alawar via Steam Community",
+      "published_at": null,
+      "observed_at": "2026-08-13T17:27:00.000+08:00",
+      "version_boundary": "Official update index includes full-version blood and microscope announcement plus demo certificate changes"
+    },
+    {
+      "source_id": "launch-walkthrough-level-1",
+      "evidence_class": "COMMUNITY",
+      "title": "Security 51 Walkthrough — Day 1 to 14 (Level 1)",
+      "url": "https://intoindiegames.com/walkthroughs/security-51-walkthrough-day-1-to-14-level-1/",
+      "publisher": "Into Indie Games",
+      "published_at": "2026-08-12T00:00:00.000+00:00",
+      "observed_at": "2026-08-13T17:36:00.000+08:00",
+      "version_boundary": "Launch-build walkthrough covering certificate and early medical scans"
+    },
+    {
+      "source_id": "launch-walkthrough-level-2",
+      "evidence_class": "COMMUNITY",
+      "title": "Security 51 Walkthrough — Day 15 to 24 (Level 2)",
+      "url": "https://intoindiegames.com/walkthroughs/security-51-walkthrough-day-15-to-24-level-2/",
+      "publisher": "Into Indie Games",
+      "published_at": "2026-08-09T00:00:00.000+00:00",
+      "observed_at": "2026-08-13T17:42:00.000+08:00",
+      "version_boundary": "Launch-build route observes blood sample analysis on Day 21"
+    },
+    {
+      "source_id": "launch-walkthrough-level-3",
+      "evidence_class": "COMMUNITY",
+      "title": "Security 51 Walkthrough — Day 25 to 30 (Level 3)",
+      "url": "https://intoindiegames.com/walkthroughs/security-51-walkthrough-day-25-to-30-level-3-branching-timeline/",
+      "publisher": "Into Indie Games",
+      "published_at": "2026-08-12T00:00:00.000+00:00",
+      "observed_at": "2026-08-13T17:48:00.000+08:00",
+      "version_boundary": "Launch-build route observes blood type testing on Day 29"
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "medical-official-tools",
+      "statement": "Official sources confirm fingerprint verification, blood testing, blood sample analysis, and microscopic examination as full-game systems.",
+      "source_ids": ["official-steam", "official-steam-community"],
+      "evidence_class": "OFFICIAL",
+      "volatile": false
+    },
+    {
+      "claim_id": "medical-certificates",
+      "statement": "Official update notes and launch observations confirm forged medical certificates as a distinct inspection condition.",
+      "source_ids": ["official-steam-community", "launch-walkthrough-level-1"],
+      "evidence_class": "OFFICIAL",
+      "volatile": true
+    },
+    {
+      "claim_id": "medical-blood-day-21",
+      "statement": "The observed launch route introduces sample collection, microscope inspection, and result printing on Day 21.",
+      "source_ids": ["launch-walkthrough-level-2"],
+      "evidence_class": "COMMUNITY",
+      "volatile": true
+    },
+    {
+      "claim_id": "medical-blood-type-day-29",
+      "statement": "The observed launch route introduces blood type testing on Day 29.",
+      "source_ids": ["launch-walkthrough-level-3"],
+      "evidence_class": "COMMUNITY",
+      "volatile": true
+    },
+    {
+      "claim_id": "medical-result-actions",
+      "statement": "Observed shift rules assign different actions to different named microscopic findings and blood types, so abnormal results are not interchangeable.",
+      "source_ids": ["launch-walkthrough-level-2", "launch-walkthrough-level-3"],
+      "evidence_class": "COMMUNITY",
+      "volatile": true
+    }
+  ],
+  "unknowns": [
+    "The retained Day 1–30 walkthrough does not establish an exact fingerprint unlock day.",
+    "No universal full-release fingerprint match-state table was available.",
+    "Blood findings and action rules may change by shift, patch, or branch."
+  ],
+  "contradictions": []
+}

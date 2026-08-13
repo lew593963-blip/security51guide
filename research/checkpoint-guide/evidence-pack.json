@@ -1,0 +1,90 @@
+{
+  "schema_version": "0.1.0",
+  "page_id": "checkpoint-guide",
+  "observed_on": "2026-08-13",
+  "sources": [
+    {
+      "source_id": "official-steam",
+      "evidence_class": "OFFICIAL",
+      "title": "Security 51 on Steam",
+      "url": "https://store.steampowered.com/app/4246860/Security_51/?l=english",
+      "publisher": "Alawar / Valve",
+      "published_at": null,
+      "observed_at": "2026-08-13T17:20:00.000+08:00",
+      "version_boundary": "English Steam listing observed after the August 12, 2026 release"
+    },
+    {
+      "source_id": "official-alawar",
+      "evidence_class": "OFFICIAL",
+      "title": "Security 51 official game page",
+      "url": "https://alawar.com/games/security-51",
+      "publisher": "Alawar",
+      "published_at": null,
+      "observed_at": "2026-08-13T17:24:00.000+08:00",
+      "version_boundary": "Official Alawar page observed August 13, 2026"
+    },
+    {
+      "source_id": "official-steam-community",
+      "evidence_class": "OFFICIAL",
+      "title": "Security 51 official Steam Community updates",
+      "url": "https://steamcommunity.com/app/4246860",
+      "publisher": "Alawar via Steam Community",
+      "published_at": null,
+      "observed_at": "2026-08-13T17:27:00.000+08:00",
+      "version_boundary": "Official update index includes the June 16 demo document-validation changes"
+    },
+    {
+      "source_id": "launch-walkthrough-level-1",
+      "evidence_class": "COMMUNITY",
+      "title": "Security 51 Walkthrough — Day 1 to 14 (Level 1)",
+      "url": "https://intoindiegames.com/walkthroughs/security-51-walkthrough-day-1-to-14-level-1/",
+      "publisher": "Into Indie Games",
+      "published_at": "2026-08-12T00:00:00.000+00:00",
+      "observed_at": "2026-08-13T17:36:00.000+08:00",
+      "version_boundary": "Launch-build walkthrough; visitors explicitly described as randomized"
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "checkpoint-fields",
+      "statement": "The official checkpoint responsibilities include papers, passes, verbal orders, names, positions, clearance levels, time, and matching the number of people entering and leaving.",
+      "source_ids": ["official-steam", "official-alawar"],
+      "evidence_class": "OFFICIAL",
+      "volatile": false
+    },
+    {
+      "claim_id": "checkpoint-consequences",
+      "statement": "The player decides who may enter the elevator, who should be stopped, and who must not be allowed to leave the facility.",
+      "source_ids": ["official-steam", "official-alawar"],
+      "evidence_class": "OFFICIAL",
+      "volatile": false
+    },
+    {
+      "claim_id": "checkpoint-demo-update",
+      "statement": "An official demo update confirms incorrect passport or pass numbers and forged medical certificates as inspection failures.",
+      "source_ids": ["official-steam-community"],
+      "evidence_class": "OFFICIAL",
+      "volatile": true
+    },
+    {
+      "claim_id": "checkpoint-launch-interface",
+      "statement": "The observed launch route begins with name, number, portrait, approval or denial, and elevator operation, then adds stronger action overrides on later shifts.",
+      "source_ids": ["launch-walkthrough-level-1"],
+      "evidence_class": "COMMUNITY",
+      "volatile": true
+    },
+    {
+      "claim_id": "checkpoint-randomization",
+      "statement": "Visitor identity and order are randomized, so a walkthrough cannot be used as a visitor-by-visitor permanent script.",
+      "source_ids": ["launch-walkthrough-level-1"],
+      "evidence_class": "COMMUNITY",
+      "volatile": true
+    }
+  ],
+  "unknowns": [
+    "The official pages do not publish a permanent complete clearance table for every floor and shift.",
+    "The retained sources do not establish a universal visual recipe for every forged document in every patch.",
+    "Exact visitor order, earnings, and action frequency vary with randomization and player performance."
+  ],
+  "contradictions": []
+}

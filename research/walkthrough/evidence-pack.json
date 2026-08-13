@@ -1,0 +1,90 @@
+{
+  "schema_version": "0.1.0",
+  "page_id": "walkthrough",
+  "observed_on": "2026-08-13",
+  "sources": [
+    {
+      "source_id": "official-steam",
+      "evidence_class": "OFFICIAL",
+      "title": "Security 51 on Steam",
+      "url": "https://store.steampowered.com/app/4246860/Security_51/?l=english",
+      "publisher": "Alawar / Valve",
+      "published_at": null,
+      "observed_at": "2026-08-13T17:20:00.000+08:00",
+      "version_boundary": "English Steam listing observed after the August 12, 2026 release"
+    },
+    {
+      "source_id": "launch-walkthrough-level-1",
+      "evidence_class": "COMMUNITY",
+      "title": "Security 51 Walkthrough — Day 1 to 14 (Level 1)",
+      "url": "https://intoindiegames.com/walkthroughs/security-51-walkthrough-day-1-to-14-level-1/",
+      "publisher": "Into Indie Games",
+      "published_at": "2026-08-12T00:00:00.000+00:00",
+      "observed_at": "2026-08-13T17:36:00.000+08:00",
+      "version_boundary": "Launch-build Level 1 route; visitors explicitly described as randomized"
+    },
+    {
+      "source_id": "launch-walkthrough-level-2",
+      "evidence_class": "COMMUNITY",
+      "title": "Security 51 Walkthrough — Day 15 to 24 (Level 2)",
+      "url": "https://intoindiegames.com/walkthroughs/security-51-walkthrough-day-15-to-24-level-2/",
+      "publisher": "Into Indie Games",
+      "published_at": "2026-08-09T00:00:00.000+00:00",
+      "observed_at": "2026-08-13T17:42:00.000+08:00",
+      "version_boundary": "Launch-build Level 2 route observed August 13, 2026"
+    },
+    {
+      "source_id": "launch-walkthrough-level-3",
+      "evidence_class": "COMMUNITY",
+      "title": "Security 51 Walkthrough — Day 25 to 30 (Level 3)",
+      "url": "https://intoindiegames.com/walkthroughs/security-51-walkthrough-day-25-to-30-level-3-branching-timeline/",
+      "publisher": "Into Indie Games",
+      "published_at": "2026-08-12T00:00:00.000+00:00",
+      "observed_at": "2026-08-13T17:48:00.000+08:00",
+      "version_boundary": "Launch-build Level 3 route and Day 30 branching-timeline unlock"
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "walkthrough-randomized",
+      "statement": "The retained launch walkthrough explicitly states that visitors are randomized and player experience may differ.",
+      "source_ids": ["launch-walkthrough-level-1", "launch-walkthrough-level-2", "launch-walkthrough-level-3"],
+      "evidence_class": "COMMUNITY",
+      "volatile": true
+    },
+    {
+      "claim_id": "walkthrough-level-1",
+      "statement": "The observed Level 1 route progresses through documents, body scanning, photography, certificates, isolation, city monitoring, organ imaging, thermal scanning, and bone imaging by Day 14.",
+      "source_ids": ["launch-walkthrough-level-1"],
+      "evidence_class": "COMMUNITY",
+      "volatile": true
+    },
+    {
+      "claim_id": "walkthrough-level-2",
+      "statement": "The observed Level 2 route adds UV paper inspection and introduces blood sample analysis on Day 21.",
+      "source_ids": ["launch-walkthrough-level-2"],
+      "evidence_class": "COMMUNITY",
+      "volatile": true
+    },
+    {
+      "claim_id": "walkthrough-level-3",
+      "statement": "The observed Level 3 route adds an answer-based test on Day 25, blood type on Day 29, and the branching timeline after Day 30.",
+      "source_ids": ["launch-walkthrough-level-3"],
+      "evidence_class": "COMMUNITY",
+      "volatile": true
+    },
+    {
+      "claim_id": "walkthrough-official-loop",
+      "statement": "Official material supports the underlying progression from document and clearance checks to more accurate identity tests, quarantine, anomaly investigation, and city containment.",
+      "source_ids": ["official-steam"],
+      "evidence_class": "OFFICIAL",
+      "volatile": false
+    }
+  ],
+  "unknowns": [
+    "Post-Day-30 ending routes and exact conditions are not sufficiently verified.",
+    "Reported purchases, earnings, and mistakes are player-specific and are not universal recommendations.",
+    "Patch and branching state may change individual shift presentation."
+  ],
+  "contradictions": []
+}

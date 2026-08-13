@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.1.0",
+  "page_id": "quarantine",
+  "observed_on": "2026-08-13",
+  "sources": [
+    {
+      "source_id": "official-steam",
+      "evidence_class": "OFFICIAL",
+      "title": "Security 51 on Steam",
+      "url": "https://store.steampowered.com/app/4246860/Security_51/?l=english",
+      "publisher": "Alawar / Valve",
+      "published_at": null,
+      "observed_at": "2026-08-13T17:20:00.000+08:00",
+      "version_boundary": "English Steam listing observed after the August 12, 2026 release"
+    },
+    {
+      "source_id": "official-alawar",
+      "evidence_class": "OFFICIAL",
+      "title": "Security 51 official game page",
+      "url": "https://alawar.com/games/security-51",
+      "publisher": "Alawar",
+      "published_at": null,
+      "observed_at": "2026-08-13T17:24:00.000+08:00",
+      "version_boundary": "Official Alawar page observed August 13, 2026"
+    },
+    {
+      "source_id": "launch-walkthrough-level-1",
+      "evidence_class": "COMMUNITY",
+      "title": "Security 51 Walkthrough — Day 1 to 14 (Level 1)",
+      "url": "https://intoindiegames.com/walkthroughs/security-51-walkthrough-day-1-to-14-level-1/",
+      "publisher": "Into Indie Games",
+      "published_at": "2026-08-12T00:00:00.000+00:00",
+      "observed_at": "2026-08-13T17:36:00.000+08:00",
+      "version_boundary": "Launch-build route observes the Day 6 Isolation Ward and early city-operation progression"
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "quarantine-official",
+      "statement": "Official sources confirm quarantine as a response to uncertain identity or humanity and acknowledge wrongful confinement.",
+      "source_ids": ["official-steam", "official-alawar"],
+      "evidence_class": "OFFICIAL",
+      "volatile": false
+    },
+    {
+      "claim_id": "quarantine-delayed",
+      "statement": "Official sources confirm immediate and delayed consequences, damaged containment cells, infection spread, anomaly investigation, and city operations.",
+      "source_ids": ["official-steam", "official-alawar"],
+      "evidence_class": "OFFICIAL",
+      "volatile": false
+    },
+    {
+      "claim_id": "quarantine-day-6",
+      "statement": "The observed launch route introduces elevator-camera threat selection, isolation, the Isolation Ward, and research on Day 6.",
+      "source_ids": ["launch-walkthrough-level-1"],
+      "evidence_class": "COMMUNITY",
+      "volatile": true
+    },
+    {
+      "claim_id": "quarantine-city-loop",
+      "statement": "The observed early route connects ward research to city operations and shows that ward availability can change by day.",
+      "source_ids": ["launch-walkthrough-level-1"],
+      "evidence_class": "COMMUNITY",
+      "volatile": true
+    }
+  ],
+  "unknowns": [
+    "No authoritative exact isolation or quarantine threshold for each ending was available.",
+    "The long-term outcome of every isolated subject remains branch-dependent and unverified.",
+    "A universal best research or city-operation order is not supported by the retained evidence."
+  ],
+  "contradictions": []
+}
