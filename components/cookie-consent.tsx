@@ -28,6 +28,20 @@ function updateGoogleConsent(choice: ConsentChoice) {
   });
 }
 
+export function clearGoogleAnalyticsCookies() {
+  const names = document.cookie
+    .split(";")
+    .map((cookie) => cookie.trim().split("=")[0])
+    .filter((name) => /^_ga(?:_|$)/.test(name));
+
+  for (const name of names) {
+    const expiry = `${name}=; Max-Age=0; Path=/; SameSite=Lax`;
+    document.cookie = expiry;
+    document.cookie = `${expiry}; Domain=${window.location.hostname}`;
+    document.cookie = `${expiry}; Domain=.${window.location.hostname}`;
+  }
+}
+
 export function CookieConsent({content, privacyHref}: CookieConsentProps) {
   const choice = useConsentChoice();
   const [forceOpen, setForceOpen] = useState(false);
@@ -46,6 +60,7 @@ export function CookieConsent({content, privacyHref}: CookieConsentProps) {
     const isRevokingGrantedConsent = window.localStorage.getItem(CONSENT_STORAGE_KEY) === "granted"
       && choice === "denied";
     updateGoogleConsent(choice);
+    if (choice === "denied") clearGoogleAnalyticsCookies();
     saveConsentChoice(choice);
     setForceOpen(false);
     if (isRevokingGrantedConsent) window.location.reload();

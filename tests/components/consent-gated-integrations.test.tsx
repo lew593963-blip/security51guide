@@ -3,6 +3,7 @@ import {beforeEach, describe, expect, it, vi} from "vitest";
 
 import {AdsterraNativeBanner} from "@/components/adsterra-native-banner";
 import {ConsentGatedGoogleAnalytics} from "@/components/consent-gated-google-analytics";
+import {clearGoogleAnalyticsCookies} from "@/components/cookie-consent";
 import {saveConsentChoice} from "@/lib/use-consent";
 
 vi.mock("@next/third-parties/google", () => ({
@@ -77,5 +78,17 @@ describe("consent-gated production integrations", () => {
     expect(screen.queryByTestId("google-analytics")).not.toBeInTheDocument();
     expect(screen.queryByTestId("third-party-script")).not.toBeInTheDocument();
     expect(document.getElementById(placement.containerId)).not.toBeInTheDocument();
+  });
+
+  it("removes GA cookies without deleting unrelated site cookies", () => {
+    document.cookie = "_ga=test; Path=/";
+    document.cookie = "_ga_HJ1R7W13QH=session; Path=/";
+    document.cookie = "site-preference=kept; Path=/";
+
+    clearGoogleAnalyticsCookies();
+
+    expect(document.cookie).not.toContain("_ga=");
+    expect(document.cookie).not.toContain("_ga_HJ1R7W13QH=");
+    expect(document.cookie).toContain("site-preference=kept");
   });
 });
