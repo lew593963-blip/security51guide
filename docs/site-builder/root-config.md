@@ -10,5 +10,16 @@
 - Platforms: Windows PC, macOS, Steam
 - Repository: `https://github.com/lew593963-blip/security51guide`
 - Brand direction: underground checkpoint terminal; deep green surfaces, clearance-lime accents, compact industrial typography.
-- Integrations: analytics disabled; Google AdSense disabled; Adsterra disabled.
+- Vercel project: `security51guide`
+- Vercel project ID: `prj_ApUGFDdFNqgTYctsH6uTK65ko3cI`
+- Vercel team ID: `team_tNWNDROwADhcfYibzr6NX0I3`
+- Production source commit: `9a4ff3ce4ba1c1f5246b346d0a4a6bca9c841029`
+- Production deployment ID: `dpl_9tc7k8ciVrU51dFwpQXzcTW1dm7X`
+- Cloudflare nameservers: `javier.ns.cloudflare.com`, `susan.ns.cloudflare.com`
+- DNSSEC: active; DS `2371 13 2 4BB4817853D3DFDC44609F8F0C3A73FA7369E153C00881C541D826F037A523F5`.
+- Google Search Console: Domain property `sc-domain:security51guide.wiki`, verified; sitemap accepted.
+- Google Analytics 4: account `403813311`, property `550170358`, stream `15449276972`, measurement ID `G-HJ1R7W13QH`; Production-only environment configuration; consent-gated.
+- Google AdSense: disabled.
+- Adsterra: website `5988948`, native banner unit `30786797`; consent-gated; no provider-supplied `ads.txt` entry.
 - Preview host policy: Vercel preview URLs never enter canonical, sitemap, robots, JSON-LD, or legal identity.
+- Production canonical policy: HTTPS apex only; `www` redirects to the apex.
