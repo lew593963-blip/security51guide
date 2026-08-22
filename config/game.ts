@@ -39,7 +39,7 @@ export const rootConfig = rootConfigSchema.parse({
         privacy: {
           title: "Privacy Policy — Security 51 Guide",
           description:
-            "Read how Security 51 Guide handles hosting logs, browser storage, external links, and disabled analytics and advertising.",
+            "Read how Security 51 Guide handles hosting logs, browser storage, consent-gated analytics, advertising, and external links.",
         },
         terms: {
           title: "Terms of Service — Security 51 Guide",
@@ -75,8 +75,18 @@ export const rootConfig = rootConfigSchema.parse({
     repository: "https://github.com/lew593963-blip/security51guide",
   },
   integrations: {
-    analytics: {enabled: false},
+    analytics: {
+      enabled: true,
+      measurementIdEnv: "NEXT_PUBLIC_GA_MEASUREMENT_ID",
+    },
     adsense: {enabled: false},
-    adsterra: {enabled: false},
+    adsterra: {
+      enabled: true,
+      scriptId: "adsterra-native-banner-30786797",
+      scriptUrl:
+        "https://pl30887296.profitableratecpmnetwork.com/d13e34863ce26f867a3c61052b13889e/invoke.js",
+      containerId: "container-d13e34863ce26f867a3c61052b13889e",
+      consentRequired: true,
+    },
   },
 });

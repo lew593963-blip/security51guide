@@ -6,15 +6,15 @@ const baseUrl = process.env.QA_BASE_URL ?? "http://127.0.0.1:3100";
 const outputRoot = path.resolve("artifacts/visual-qa");
 const routes = [
   {key: "home", pathname: "/"},
-  {key: "multiplayer", pathname: "/multiplayer"},
-  {key: "rot-sickness", pathname: "/rot-sickness"},
-  {key: "spark-abilities", pathname: "/spark-abilities"},
-  {key: "solo-guide", pathname: "/solo-guide"},
-  {key: "vessels", pathname: "/vessels"},
+  {key: "checkpoint-guide", pathname: "/checkpoint-guide"},
+  {key: "anomalies", pathname: "/anomalies"},
+  {key: "medical-tests", pathname: "/medical-tests"},
+  {key: "quarantine", pathname: "/quarantine"},
+  {key: "walkthrough", pathname: "/walkthrough"},
   {key: "about", pathname: "/about"},
   {key: "contact", pathname: "/contact"},
-  {key: "privacy", pathname: "/privacy-policy"},
-  {key: "terms", pathname: "/terms-of-service"},
+  {key: "privacy", pathname: "/privacy"},
+  {key: "terms", pathname: "/terms"},
 ];
 const viewports = [
   {key: "desktop", width: 1440, height: 900},

@@ -5,6 +5,7 @@ import {useEffect, useState} from "react";
 
 import {
   CONSENT_OPEN_EVENT,
+  CONSENT_STORAGE_KEY,
   type ConsentChoice,
   type ConsentContent,
 } from "@/lib/consent";
@@ -42,9 +43,12 @@ export function CookieConsent({content, privacyHref}: CookieConsentProps) {
   }, []);
 
   function save(choice: ConsentChoice) {
+    const isRevokingGrantedConsent = window.localStorage.getItem(CONSENT_STORAGE_KEY) === "granted"
+      && choice === "denied";
     updateGoogleConsent(choice);
     saveConsentChoice(choice);
     setForceOpen(false);
+    if (isRevokingGrantedConsent) window.location.reload();
   }
 
   if (choice && !forceOpen) return null;

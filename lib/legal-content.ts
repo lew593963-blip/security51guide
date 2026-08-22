@@ -13,10 +13,10 @@ export type LegalContent = {
 
 export const legalContent: Record<Locale, LegalContent> = {
   en: {
-    updated: "Last updated: August 13, 2026",
+    updated: "Last updated: August 22, 2026",
     privacyTitle: "Privacy Policy",
     privacyIntro:
-      "This policy explains how the independent Security 51 Guide handles technical delivery, local browser storage, external links, and currently disabled analytics and advertising integrations.",
+      "This policy explains how the independent Security 51 Guide handles technical delivery, local browser storage, external links, and consent-gated analytics and advertising.",
     privacySections: [
       {
         title: "Information collected",
@@ -24,11 +24,11 @@ export const legalContent: Record<Locale, LegalContent> = {
       },
       {
         title: "Browser storage and consent",
-        body: "The current configuration does not enable Google Analytics, Google AdSense, or Adsterra and does not load their scripts. The reusable technical template includes consent controls for a future reviewed configuration, but this build does not ask for or store an optional advertising or analytics choice.",
+        body: "Necessary local browser storage remembers whether you accepted or rejected optional services. Google Analytics 4 and Adsterra do not load until you accept optional analytics and advertising. If you reject or select Necessary only, their scripts and placements remain disabled. You can reopen Privacy choices from the footer and change your selection.",
       },
       {
         title: "Analytics and advertising status",
-        body: "No site-specific analytics measurement ID, AdSense account or slot, or Adsterra placement is configured. If an integration is added later, this policy and the consent interface must be reviewed before its script is enabled.",
+        body: "After consent, Google Analytics 4 measures visits and page interactions for site performance and content improvement, while Adsterra may load a native advertising placement on guide pages. These providers may process online identifiers, device and browser information, page URLs, approximate location, and interaction data under their own policies. Google AdSense is not enabled.",
       },
       {
         title: "External links and media",
@@ -53,7 +53,7 @@ export const legalContent: Record<Locale, LegalContent> = {
       },
       {
         title: "External services and future integrations",
-        body: "The current build contains external links and media but no active analytics or advertising integration. Security 51 Guide does not control external content, purchases, accounts, availability, or privacy practices, and a link is not an endorsement.",
+        body: "The site contains external links and media and, only after optional consent, may load Google Analytics 4 and an Adsterra native advertising placement. Security 51 Guide does not control external content, purchases, accounts, availability, or privacy practices, and a link or advertisement is not an endorsement.",
       },
       {
         title: "Changes and contact",

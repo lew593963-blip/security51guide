@@ -15,12 +15,22 @@ describe("Security 51 production target config", () => {
     expect(rootConfig.brand.appleIcon).toBe("/icon.svg");
   });
 
-  it("ships analytics and every advertising integration disabled", () => {
+  it("enables exactly the approved consent-gated GA4 and Adsterra integrations", () => {
     expect(rootConfig.integrations).toEqual({
-      analytics: {enabled: false},
+      analytics: {
+        enabled: true,
+        measurementIdEnv: "NEXT_PUBLIC_GA_MEASUREMENT_ID",
+      },
       adsense: {enabled: false},
-      adsterra: {enabled: false},
+      adsterra: {
+        enabled: true,
+        scriptId: "adsterra-native-banner-30786797",
+        scriptUrl:
+          "https://pl30887296.profitableratecpmnetwork.com/d13e34863ce26f867a3c61052b13889e/invoke.js",
+        containerId: "container-d13e34863ce26f867a3c61052b13889e",
+        consentRequired: true,
+      },
     });
-    expect(JSON.stringify(rootConfig.integrations)).not.toMatch(/G-|ca-pub-|atOptions/);
+    expect(JSON.stringify(rootConfig.integrations)).not.toMatch(/G-HJ1R7W13QH|ca-pub-|atOptions/);
   });
 });

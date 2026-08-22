@@ -3,8 +3,8 @@ import path from "node:path";
 
 import {describe, expect, it} from "vitest";
 
-const roots = ["app", "components", "config", "content", "docs", "i18n", "lib", "messages", "research"];
-const textExtensions = new Set([".css", ".json", ".md", ".mdx", ".ts", ".tsx"]);
+const roots = ["app", "components", "config", "content", "docs", "i18n", "lib", "messages", "research", "scripts"];
+const textExtensions = new Set([".css", ".json", ".md", ".mdx", ".mjs", ".ts", ".tsx"]);
 const forbidden = [
   ["war", "hounds"].join(""),
   ["se", "phiria"].join(""),
@@ -14,6 +14,11 @@ const forbidden = [
   ["ob", "sidian"].join(""),
   ["392", "9470"].join(""),
   ["war", "houndsguide.online"].join(""),
+  ["/multi", "player"].join(""),
+  ["/rot", "-sickness"].join(""),
+  ["/spark", "-abilities"].join(""),
+  ["/solo", "-guide"].join(""),
+  ["/ves", "sels"].join(""),
 ];
 
 function walk(directory: string): string[] {
