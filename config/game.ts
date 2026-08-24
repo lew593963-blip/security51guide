@@ -63,8 +63,8 @@ export const rootConfig = rootConfigSchema.parse({
   brand: {
     mark192: "/icon.svg",
     mark512: "/icon.svg",
-    favicon: "/icon.svg",
-    appleIcon: "/icon.svg",
+    favicon: "/favicon.ico",
+    appleIcon: "/apple-icon.png",
     defaultOgImage: "/og.png",
     manifestDescription:
       "Independent Security 51 guides for checkpoint procedure, anomalies, testing, quarantine, and the launch walkthrough.",
