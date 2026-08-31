@@ -8,7 +8,6 @@ import type {GuideFrontmatter} from "@/lib/content";
 import {localizePath} from "@/lib/locale-path";
 import {routes} from "@/lib/site";
 
-import {AdsterraNativeBanner} from "./adsterra-native-banner";
 import styles from "./article-shell.module.css";
 
 type ArticleShellProps = {
@@ -41,8 +40,6 @@ export function ArticleShell({
   children,
 }: ArticleShellProps) {
   const resolvedParentHref = parentHref ?? localizePath(routes.home, locale);
-  const adsterra = rootConfig.integrations.adsterra;
-
   return (
     <main id="main-content" className={styles.articlePage}>
       <header className={styles.articleHero}>
@@ -83,7 +80,6 @@ export function ArticleShell({
           </div>
         </nav>
       ) : null}
-      {adsterra.enabled ? <AdsterraNativeBanner placement={adsterra} /> : null}
     </main>
   );
 }

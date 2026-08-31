@@ -79,10 +79,10 @@ const adsterraSchema = z.discriminatedUnion("enabled", [
   z.object({enabled: z.literal(false)}),
   z.object({
     enabled: z.literal(true),
+    format: z.literal("social-bar"),
     scriptId: z.string().min(1),
     scriptUrl: urlSchema,
-    containerId: z.string().min(1),
-    consentRequired: z.boolean(),
+    consentRequired: z.literal(true),
   }),
 ]);
 

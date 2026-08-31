@@ -24,4 +24,25 @@ describe("first Security 51 guide batch", () => {
       expect(entry.frontmatter.description.length, entry.slug).toBeLessThanOrEqual(180);
     }
   });
+
+  it("answers measured day-count and checkpoint intent without inventing routes", () => {
+    const walkthrough = contentRegistry.find(({slug}) => slug === "walkthrough");
+    const checkpoint = contentRegistry.find(({slug}) => slug === "checkpoint-guide");
+
+    expect(walkthrough?.source).toMatch(
+      /^### How many days are in Security 51\?$/m,
+    );
+    expect(walkthrough?.source).toMatch(
+      /documents Day 1 through Day 30[\s\S]{0,160}not proof[\s\S]{0,80}ends/i,
+    );
+    expect(walkthrough?.source).toMatch(
+      /^### Does this walkthrough include every ending and achievement\?$/m,
+    );
+    expect(checkpoint?.frontmatter.title).toBe(
+      "Security 51 Checkpoint Guide & Clearance Levels",
+    );
+    expect(checkpoint?.source.split(/\n\s*\n/)[0]).toMatch(
+      /checkpoint guide[\s\S]*documents[\s\S]*clearance levels/i,
+    );
+  });
 });

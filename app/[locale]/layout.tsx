@@ -6,6 +6,7 @@ import Script from "next/script";
 
 import {CookieConsent} from "@/components/cookie-consent";
 import {ConsentGatedGoogleAnalytics} from "@/components/consent-gated-google-analytics";
+import {AdsterraSocialBar} from "@/components/adsterra-social-bar";
 import {SiteFooter} from "@/components/site-footer";
 import {SiteHeader} from "@/components/site-header";
 import {rootConfig} from "@/config";
@@ -57,6 +58,7 @@ export default async function LocaleLayout({
   const {analytics, adsense, adsterra} = rootConfig.integrations;
   const hasGoogleIntegration = analytics.enabled || adsense.enabled;
   const hasOptionalIntegration = hasGoogleIntegration || adsterra.enabled;
+  const productionHostname = new URL(rootConfig.site.url).hostname;
   const gaMeasurementId = analytics.enabled
     ? process.env[analytics.measurementIdEnv]
     : undefined;
@@ -114,6 +116,12 @@ export default async function LocaleLayout({
           <CookieConsent
             content={consentContent[locale]}
             privacyHref={localizePath(routes.privacy, locale)}
+          />
+        ) : null}
+        {adsterra.enabled ? (
+          <AdsterraSocialBar
+            placement={adsterra}
+            productionHostname={productionHostname}
           />
         ) : null}
       </body>

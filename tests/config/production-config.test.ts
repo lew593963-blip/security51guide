@@ -40,7 +40,7 @@ describe("Security 51 production target config", () => {
     expect(appleIcon.readUInt32BE(20)).toBe(180);
   });
 
-  it("enables exactly the approved consent-gated GA4 and Adsterra integrations", () => {
+  it("enables exactly the approved consent-gated GA4 and Social Bar integrations", () => {
     expect(rootConfig.integrations).toEqual({
       analytics: {
         enabled: true,
@@ -49,10 +49,10 @@ describe("Security 51 production target config", () => {
       adsense: {enabled: false},
       adsterra: {
         enabled: true,
-        scriptId: "adsterra-native-banner-30786797",
+        format: "social-bar",
+        scriptId: "adsterra-social-bar-31005823",
         scriptUrl:
-          "https://pl30887296.profitableratecpmnetwork.com/d13e34863ce26f867a3c61052b13889e/invoke.js",
-        containerId: "container-d13e34863ce26f867a3c61052b13889e",
+          "https://pl31106322.profitableratecpmnetwork.com/cf/02/32/cf023218d6f8b9be18db86d6d8ee28bb.js",
         consentRequired: true,
       },
     });

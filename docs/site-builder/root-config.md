@@ -20,6 +20,6 @@
 - Google Search Console: Domain property `sc-domain:security51guide.wiki`, verified; sitemap accepted.
 - Google Analytics 4: account `403813311`, property `550170358`, stream `15449276972`, measurement ID `G-HJ1R7W13QH`; Production-only environment configuration; consent-gated.
 - Google AdSense: disabled.
-- Adsterra: website `5988948`, native banner unit `30786797`; consent-gated; no provider-supplied `ads.txt` entry.
+- Adsterra production: website `5988948`, native banner unit `30786797`; consent-gated; no provider-supplied `ads.txt` entry. Local replacement candidate: Social Bar unit `31005823`; consent-gated and pending deployment approval.
 - Preview host policy: Vercel preview URLs never enter canonical, sitemap, robots, JSON-LD, or legal identity.
 - Production canonical policy: HTTPS apex only; `www` redirects to the apex.

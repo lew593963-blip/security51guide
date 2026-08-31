@@ -28,7 +28,7 @@ export const legalContent: Record<Locale, LegalContent> = {
       },
       {
         title: "Analytics and advertising status",
-        body: "After consent, Google Analytics 4 measures visits and page interactions for site performance and content improvement, while Adsterra may load a native advertising placement on guide pages. These providers may process online identifiers, device and browser information, page URLs, approximate location, and interaction data under their own policies. Google AdSense is not enabled.",
+        body: "After consent, Google Analytics 4 measures visits and page interactions for site performance and content improvement, while Adsterra may load its Social Bar advertising unit. These providers may process online identifiers, device and browser information, page URLs, approximate location, and interaction data under their own policies. Google AdSense is not enabled.",
       },
       {
         title: "External links and media",
@@ -53,7 +53,7 @@ export const legalContent: Record<Locale, LegalContent> = {
       },
       {
         title: "External services and future integrations",
-        body: "The site contains external links and media and, only after optional consent, may load Google Analytics 4 and an Adsterra native advertising placement. Security 51 Guide does not control external content, purchases, accounts, availability, or privacy practices, and a link or advertisement is not an endorsement.",
+        body: "The site contains external links and media and, only after optional consent, may load Google Analytics 4 and an Adsterra Social Bar advertising unit. Security 51 Guide does not control external content, purchases, accounts, availability, or privacy practices, and a link or advertisement is not an endorsement.",
       },
       {
         title: "Changes and contact",

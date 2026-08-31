@@ -18,7 +18,7 @@ Official Steam and Alawar material establishes game identity and confirmed syste
 
 ## Integrations
 
-Google Analytics 4 (`G-HJ1R7W13QH`) and the approved Security 51 Adsterra native banner are enabled only after optional consent. Rejecting optional consent keeps both providers disabled and removes GA cookies. Google AdSense is not enabled. The Adsterra account did not provide an `ads.txt` entry, so none is published.
+Google Analytics 4 (`G-HJ1R7W13QH`) and the approved Security 51 Adsterra Social Bar are enabled only after optional consent. Rejecting optional consent keeps both providers disabled and removes GA cookies. Google AdSense is not enabled. The Adsterra account did not provide an `ads.txt` entry, so none is published.
 
 ## Production
 

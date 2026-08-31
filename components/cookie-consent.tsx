@@ -9,6 +9,10 @@ import {
   type ConsentChoice,
   type ConsentContent,
 } from "@/lib/consent";
+import {
+  requestDocumentReload,
+  revokeRequestedSocialBars,
+} from "@/lib/adsterra-social-bar-state";
 import {saveConsentChoice, useConsentChoice} from "@/lib/use-consent";
 
 import styles from "./cookie-consent.module.css";
@@ -16,6 +20,7 @@ import styles from "./cookie-consent.module.css";
 type CookieConsentProps = {
   content: ConsentContent;
   privacyHref: string;
+  reload?: () => void;
 };
 
 function updateGoogleConsent(choice: ConsentChoice) {
@@ -42,7 +47,11 @@ export function clearGoogleAnalyticsCookies() {
   }
 }
 
-export function CookieConsent({content, privacyHref}: CookieConsentProps) {
+export function CookieConsent({
+  content,
+  privacyHref,
+  reload = () => window.location.reload(),
+}: CookieConsentProps) {
   const choice = useConsentChoice();
   const [forceOpen, setForceOpen] = useState(false);
 
@@ -63,7 +72,10 @@ export function CookieConsent({content, privacyHref}: CookieConsentProps) {
     if (choice === "denied") clearGoogleAnalyticsCookies();
     saveConsentChoice(choice);
     setForceOpen(false);
-    if (isRevokingGrantedConsent) window.location.reload();
+    if (isRevokingGrantedConsent) {
+      revokeRequestedSocialBars();
+      requestDocumentReload(reload);
+    }
   }
 
   if (choice && !forceOpen) return null;
